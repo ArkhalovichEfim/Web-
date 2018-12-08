@@ -1,0 +1,8 @@
+.outer {
+    background-color: darkturquoise;
+    color: blue;
+    shape-inside: circle(50px);
+}
+.word--red {
+    color: red;
+}

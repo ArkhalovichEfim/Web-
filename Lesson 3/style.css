@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block {
+    background: linear-gradient(135deg, orange, red);
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    transition: transform 2s ease,
+        width 2s linear 1.8s;
+}
+
+.outer:hover > .block {
+    width: 100px;
+}
+
+.block__ease {
+    transition: width 1s ease;
+}
