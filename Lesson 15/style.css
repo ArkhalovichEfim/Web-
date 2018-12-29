@@ -14,7 +14,6 @@ header {
 
 
 div {
-    border: 3px solid red;
     margin: 5px;
     padding: 5px;
    /* flex-grow: 1;*/
@@ -25,15 +24,20 @@ div {
     display: inherit;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 article {
     background-color: cornflowerblue;
-    border: 3px solid yellow;
     padding: 10px;
 }
 
-footer {
-    background-color: blue;
-    border: 3px solid black;
+#footer {
+    display: flex;
+    flex-wrap: inherit;
     padding: 10px;
 }
 
@@ -53,9 +57,32 @@ footer {
     justify-content: space-around;
 }
 
+#block1 {
+    background-color: beige;
+    margin: -10;
+    padding: -10;
+}
+
+#block2 {
+    background-color: white;
+    margin: -10;
+    padding: -10;
+}
+
 .main-section-block {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 140px;
+}
+
+.desc {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-panel {
+    border-radius: 30px;
+    background-color: coral;
 }
